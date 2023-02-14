@@ -1,0 +1,29 @@
+import java.util.*;
+//break文の練習(ループの強制終了)
+//初期値を1として、値を3倍し続ける(九九の三の段ではなく、3*3=9,9*3=27していくということ)。もし、numが1000以上になれば強制終了
+public class Main {
+    public static void main(String[] args)  {
+        // Your code here!
+        int num=1;
+        for (int i=0;i<100;i++){//繰り返し処理を100回行うということ
+            num*=3;
+            System.out.println(num);
+            
+            if (num>1000){//numが1000を超えたらbreakでループを抜ける
+                break;
+            } 
+        }
+        
+        System.out.println("END");
+    }
+}
+/*出力結果
+3
+9
+27
+81
+243
+729
+2187
+END
+*/
